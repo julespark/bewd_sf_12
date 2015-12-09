@@ -1,0 +1,41 @@
+require 'pry'
+
+#Apartment class.
+class Apartment
+
+	attr_accessor :unit, :rent, :sqft, :num_bedrooms, :num_bathrooms, :renters
+
+	def initialize (unit, rent, sqft, num_bedrooms, num_bathrooms)
+		@unit = unit
+		@rent = rent
+		@sqft = sqft
+		@num_bedrooms = num_bedrooms
+		@num_bathrooms = num_bathrooms
+		@renters = []
+	
+	end
+
+
+
+	def apply_renter?(person)
+		if person.credit_score > 600 && person.budget > @rent
+			true
+		else 
+			false
+		end
+	end
+	
+	def show_renters
+		@renters.each do |renter|
+			puts "Unit A1 has these renters: #{renter.name}"
+		end
+	end
+
+	def add_renter(renter)
+		@renters.push(renter)
+	end
+
+	
+
+end
+

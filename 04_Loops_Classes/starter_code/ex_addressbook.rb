@@ -31,7 +31,6 @@ end
 
 #find a specific contact and print the telephone number
 def find_and_call_contact(contacts, name)
-	contacts.select{|key, hash| hash["name"] == name}
 
 	contacts.each do |contact|
 		if contacts[:name]== name
@@ -42,7 +41,6 @@ end
 
 def add_to_contacts(contacts, contact)
 	contacts << contact
-	binding.pry
 end
 
 #array to hold each contact
@@ -59,13 +57,13 @@ add_to_contacts(contacts, contact)
 
 binding.pry
 #
-# contact = create_contact("nicole", "444-444-4444", "nicole@example.com")
-# add_to_contacts(contacts, contact)
+contact = create_contact("nicole", "444-444-4444", "nicole@example.com")
+add_to_contacts(contacts, contact)
 #
 #####
 contacts_count(contacts)
 #
-# #find_a_name
+find_a_name
 name = "kisha"
 find_and_call_contact(contacts, name)
 #
