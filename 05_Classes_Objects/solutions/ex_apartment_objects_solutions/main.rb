@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-require 'pry'
-
-=======
-require "pry"
->>>>>>> d4d0371fc1b632c18c9608947c605083f5b631bb
 require_relative 'lib/building'
 require_relative 'lib/apartment'
 require_relative 'lib/person'
@@ -23,23 +17,12 @@ a1 = Apartment.new("1A", 800, 600, 1, 1)
 a2 = Apartment.new("1B", 1400, 900, 2, 1)
 a3 = Apartment.new("2A", 2000, 1200, 3, 2)
 
-<<<<<<< HEAD
-ann = Person.new("ann", 200, 200)
-be = Person.new("be", 200, 200)
-cece = Person.new("cece", 200, 200)
-
-=======
->>>>>>> d4d0371fc1b632c18c9608947c605083f5b631bb
 #Create a new building with this name, address and number of apartments
 building = Building.new("Forest Lofts", "125 Elm St", 3)
 
 #set the building's apartments
 building.apartments = [a1, a2, a3]
-<<<<<<< HEAD
-binding.pry
-=======
 
->>>>>>> d4d0371fc1b632c18c9608947c605083f5b631bb
 #display the building's apartments
 puts "The building #{building.name} has the following apartments:"
 building.display_apartments() 
@@ -48,14 +31,8 @@ building.display_apartments()
 # "Unit 2A has 2000 sqft, 3 bed, 2 bath, it's available!"
 # => nil
 
-<<<<<<< HEAD
-
 #create a renter with name, a budget, and a credit score
-#steve = new Person("Steve", 1000, 650)??????!?!??
-=======
-#create a renter with name, a budget, and a credit score
->>>>>>> d4d0371fc1b632c18c9608947c605083f5b631bb
-steve = Person.new("Steve", 1000, 650)
+steve = new Person("Steve", 1000, 650)
 
 puts "Now Steve wants to rent an apartment."
 
@@ -70,10 +47,6 @@ puts "Steve wants to apply for Unit A2. Is he eligible?"
 a2.apply_renter?(steve)
 # => false
 
-<<<<<<< HEAD
-
-=======
->>>>>>> d4d0371fc1b632c18c9608947c605083f5b631bb
 puts "Now Steve wants to apply for Unit A1. Is he eligible?"
 a1.apply_renter?(steve)
 # => true
@@ -81,17 +54,9 @@ a1.apply_renter?(steve)
 puts "Wonderful! Now Steve rents the apartment."
 a1.add_renter(steve)
 
-<<<<<<< HEAD
-
 a1.show_renters()
 # "Unit A1 has these renters: [Steve]"
 
-
-=======
-a1.show_renters()
-# "Unit A1 has these renters: [Steve]"
-
->>>>>>> d4d0371fc1b632c18c9608947c605083f5b631bb
 #display the building's apartments
 puts "The building #{building.name} has the following apartments:"
 building.display_apartments() 
