@@ -11,6 +11,7 @@ Class methods are called on the class itself; it's the same for every instance o
 Inheritance
 
 Class can be a child of another class. Ex - Square is a type of polygon; 
+@@ is a class variable; same for all variables
 =end
 
 

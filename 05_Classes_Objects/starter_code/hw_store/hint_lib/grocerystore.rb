@@ -1,5 +1,6 @@
 #use this file to define a class that will represent a grocery store 
 
+#question, camel-case?
 class GroceryStore
 	attr_accessor :name, :inventory
 

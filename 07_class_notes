@@ -1,0 +1,30 @@
+Rails
+	framework, a set of code to streamline common tasks
+	open source, written in ruby
+	webistes in rail: GitHub, Hulu, General Assembly
+
+What happens when you hit enter and where does this website live?
+1/ browser
+2/ DNS server
+3/ web server
+4/ response back to the browser
+
+Rails provides:
+	- Support code
+	- Routing: mapping between url and resouce (page, action, request/piece of code) on server
+	- Receiving request, returns responses
+	- Database (sql light is the default); ORM, connecting database to ruby
+	- Structure for your code, 'Model View Controller Paradigm' (MVC; a way that most people write code to 	  handle request)
+
+Scaffolding
+-Quick and dirty way to create a resource; we'll never use this again
+-This creates a lot of unneccessary files that is difficult to undo
+
+
+Most Important - 
+Rails
+Server -> request -> route -> controller/model/view
+
+Most Confusing - 
+Db migration; still don't really understand file database and table? database
+ORM

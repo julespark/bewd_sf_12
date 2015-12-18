@@ -4,7 +4,8 @@ class Customer
 	attr_accessor :name, :money, :shopping_cart
 
 	def initialize(name, money)
-		#code here
+		@name = name
+		@money = money
 		@shopping_cart = {}
 	end
 
@@ -16,6 +17,14 @@ class Customer
 
 		#update the shopping cart to show what the customer bought. 
 		#Ex: @shopping_cart = { "banana" => {price: 1, quantity: 1} }
+
+		@story = store
+		@item = item
+		@quantity = quantity
+
+		@shopping_cart.push(item, quantity)
+
+
 	end
 
 	def checkout
