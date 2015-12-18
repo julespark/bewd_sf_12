@@ -1,5 +1,12 @@
-<h1>Welcome to Secret Number Game</h1>
-<h2> Choose a number </h2>
-<% 1.upto(5) do |num| %>
-	<%= link_to(num, secret_number_show_path(num) ) %>
+<h1>Secret Number Game </h1>
+
+<%= image_tag 'games/loser.gif' %>
+
+
+<% @games.each do |game| %>
+    <%= game %>
 <% end %>
+
+<% 1 + 1 %> // won't show
+<%= 2 + 2 %> // will show!
+

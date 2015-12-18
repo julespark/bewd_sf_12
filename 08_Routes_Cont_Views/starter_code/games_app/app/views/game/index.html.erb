@@ -1,5 +1,9 @@
-<h1>Welcome to the Game Center.</h1>
-<h2>Choose a game.</h2>
-<p>
-<%= link_to("Secret Number", secret_number_new_path) %>
-</p>
+<h1>Game Index</h1>
+<%= image_tag 'games/loser.gif' %>
+
+<% @games.each do |game| %>
+    <%= game %>
+<% end %>
+
+<% 1 + 1 %> // won't show
+<%= 2 + 2 %> // will show!

@@ -3,7 +3,6 @@ GamesApp::Application.routes.draw do
   get "secret_number/show"
 
   root 'game#index'
-
   get "game/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
