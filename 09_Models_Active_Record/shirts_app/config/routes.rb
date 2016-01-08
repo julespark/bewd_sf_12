@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 Rails.application.routes.draw do
   root 'shirt#index'
   get 'shirt/index'
 
+=======
+ShirtsApp::Application.routes.draw do
+  root 'shirt#show'
+  get "shirt/show"
+>>>>>>> 7ac796eadbea832b6078fcc63e80c32a277104a9
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -42,7 +48,11 @@ Rails.application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 7ac796eadbea832b6078fcc63e80c32a277104a9
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'

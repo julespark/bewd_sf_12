@@ -1,0 +1,6 @@
+<%= form_tag "/movies/search", method: "GET" do %>
+  <%= text_field_tag :q, params[:q], placeholder:"Enter Movie Here" %>
+  <%= submit_tag "Search" %>
+<% end %>
+
+<%= render 'list' %>
