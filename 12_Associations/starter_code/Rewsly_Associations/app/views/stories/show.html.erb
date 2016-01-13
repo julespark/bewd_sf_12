@@ -1,8 +1,10 @@
+
 <h1><%= @story.title %></h1>
 <p><%= link_to @story.link, @story.link %>
 <p><%= link_to "Back to home page", root_path %></p>
 
 <% if false %>
+
 <%= form_for [@story, @comment] do |f| %>
   <p>
     <%= f.text_area :post, placeholder: "Add a comment...", :rows => 8, :cols => 40 %>
@@ -19,3 +21,13 @@
 <%end%>
 
 
+
+<h1>Category</h1>
+<p><%= link_to "Back to home page", root_path %></p>
+
+<h2><%= @category.title %></h2>
+<u1>
+	<% @cageory.stories.each do |story| %>
+		<li><% link_to story.title, story_path(story.id) %></li>
+	<%end%>
+</u1>
